@@ -8,6 +8,6 @@ if B>=10:
 
 nf = A*3.5/11 + B*7.5/11
 
-print(f"MEDIA = {nf:.5f}\\n")
+print(f"MEDIA = {nf:.5f}")
 
 print("MEDIA = %.5f\\n" % nf)
