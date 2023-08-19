@@ -1,0 +1,16 @@
+while True:
+    try:
+        L = int(input()) 
+        velocidades = list(map(int, input().split()))  
+
+        max_velocidade = max(velocidades)  
+
+        if max_velocidade < 10:
+            print(1)
+        elif max_velocidade < 20:
+            print(2)
+        else:
+            print(3)
+            
+    except EOFError:  
+        break
