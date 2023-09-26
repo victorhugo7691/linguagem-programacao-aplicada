@@ -19,7 +19,7 @@ for i in range(nCasos):
     if funcaoRafael(x, y) > funcaoBeto(x,y) and funcaoRafael(x, y) > funcaoCarlos(x, y):
         print("Rafael ganhou")
     
-    elif funcaoBeto(x, y) > funcaoRafael(x, y) and funcaoBeto(x, y) > funcaoCarlos(x, y):
+    elif funcaoBeto(x, y) > funcaoCarlos(x, y):
         print("Beto ganhou")
     
     else:
