@@ -1,26 +1,27 @@
-def funcaoRafael(x, y):
+def funcaoDoRafael(x, y):
     return (3*x)*(3*x) + y*y
 
-def funcaoBeto(x, y):
-    return 2*(x*x) + 5*(x*x*x)
+def funcaoDoBeto(x, y):
+    return 2*(x*x) + (5*y)*(5*y)
 
-def funcaoCarlos(x, y):
-    return -100*x + (y*y*y)
+def funcaoDoCarlos(x, y):
+    return -100 * x + (y*y*y)
 
-nCasos = int(input())
+n = int(input())
 
-for i in range(nCasos):
-    linha = input()
-    valores = linha.split()
-
+for _ in range(n):
+    valor = input()
+    valores = valor.split()
     x = int(valores[0])
     y = int(valores[1])
 
-    if funcaoRafael(x, y) > funcaoBeto(x,y) and funcaoRafael(x, y) > funcaoCarlos(x, y):
+    rafael = funcaoDoRafael(x, y)
+    beto = funcaoDoBeto(x, y)
+    carlos = funcaoDoCarlos(x, y)
+
+    if rafael > beto and rafael  > carlos:
         print("Rafael ganhou")
-    
-    elif funcaoBeto(x, y) > funcaoCarlos(x, y):
+    if beto > carlos and beto > rafael:
         print("Beto ganhou")
-    
-    else:
+    elif (carlos > beto and carlos > rafael):
         print("Carlos ganhou")
